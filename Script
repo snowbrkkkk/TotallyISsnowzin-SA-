@@ -1,0 +1,71 @@
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Feito por snow";
+	Text = "Obrigado por usar meu script <3";
+	Icon = "rbxthumb://type=Asset&id=7121294175&w=150&h=150"})
+Duration = 10;
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/Librarykavoui"))()
+
+local Window = Library.CreateLib("Snowzin Hub | SA", "DarkTheme")
+
+
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("Stands awakening")
+
+Section:NewButton("Auto Boss", "sai daqui e faz e boss logo", function()
+
+local sound = Instance.new("Sound")
+sound.SoundId = "rbxassetid://123235415862774"
+sound.Volume = 5
+sound.Looped = false
+sound.Parent = game:GetService("SoundService")
+sound:Play()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Tocando Beethoven Virus";
+	Text = "DERROTE ESSE BOSS >:D";
+	Icon = "rbxthumb://type=Asset&id=7121286740&w=150&h=150"})
+Duration = 10;
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/sunexn/standsawakening/main/uncanny.lua",true))()
+    print("Clicked")
+end)
+
+Section:NewButton("No cooldown (usar com o auto boss)", "nada aqui", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-no-cooldown-6517"))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Créditos")
+local Section = Tab:NewSection("Discord: aquelesnow")
+
+Section:NewButton("Programado por Snow", "aaaaaa", function()
+    print("Clicked")
+end)
+
+Section:NewButton("obrigado por estar usando meu script :3", "CROWN CRISON SA", function()
+    print("Clicked")
+end)
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "ScreenGui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 90, 0, 38)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Abrir"
+Toggle.TextColor3 = Color3.fromRGB(248, 248, 248)
+Toggle.TextSize = 25.000
+Toggle.Draggable = true
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
+
+
