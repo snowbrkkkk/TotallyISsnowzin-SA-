@@ -10,7 +10,7 @@ local Window = Library.CreateLib("Snowzin Hub | SA", "DarkTheme")
 
 
 
-local Tab = Window:NewTab("Main")
+local Tab = Window:NewTab("Boss")
 local Section = Tab:NewSection("Stands awakening")
 
 Section:NewButton("Auto Boss", "sai daqui e faz e boss logo", function()
@@ -37,14 +37,75 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-no-cooldown
     print("Clicked")
 end)
 
-local Tab = Window:NewTab("Créditos")
-local Section = Tab:NewSection("Discord: aquelesnow")
+local Tab = Window:NewTab("Teleport")
+local Section = Tab:NewSection("Use apenas no jogo!")
 
-Section:NewButton("Programado por Snow", "aaaaaa", function()
+Section:NewButton("Timmy", "aaaaaa", function()
+
+                local player = game.Players.LocalPlayer
+                local root = player.Character:WaitForChild("HumanoidRootPart")
+                root.CFrame = CFrame.new(1399.550000, 584.340000, -219.290000)
+            
     print("Clicked")
 end)
 
-Section:NewButton("obrigado por estar usando meu script :3", "CROWN CRISON SA", function()
+Section:NewButton("Farmland", "CROWN CRISON SA", function()
+
+                local player = game.Players.LocalPlayer
+                local root = player.Character:WaitForChild("HumanoidRootPart")
+                root.CFrame = CFrame.new(-298.690000, 529.770000, -1489.930000)
+            
+    print("Clicked")
+end)
+
+Section:NewButton("Bank", "nada", function()
+
+                local player = game.Players.LocalPlayer
+                local root = player.Character:WaitForChild("HumanoidRootPart")
+                root.CFrame = CFrame.new(1342.760000, 587.620000, -552.910000)
+            
+    print("Clicked")
+end)
+
+Section:NewButton("Portal", "manda", function()
+
+                local player = game.Players.LocalPlayer
+                local root = player.Character:WaitForChild("HumanoidRootPart")
+                root.CFrame = CFrame.new(1134.740000, 584.070000, -709.320000)
+            
+    print("Clicked")
+end)
+
+Section:NewButton("Rachael Quests", "lol", function()
+
+                local player = game.Players.LocalPlayer
+                local root = player.Character:WaitForChild("HumanoidRootPart")
+                root.CFrame = CFrame.new(1043.650000, 583.260000, -441.310000)
+            
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Others")
+local Section = Tab:NewSection("Others scripts")
+
+Section:NewButton("Infinite yield", ".", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-infinite-yield-39585"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Fly v3", ".", function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Gui-Fly-v3-37111"))()
+    print("Clicked")
+end)
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("Discord: aquelesnow")
+
+Section:NewButton("Created by Snow", "LOLLLLLL", function()
+    print("Clicked")
+end)
+
+Section:NewButton("obrigado por usar meu script :D", "nada", function()
     print("Clicked")
 end)
 
@@ -67,5 +128,3 @@ Toggle.Draggable = true
 Toggle.MouseButton1Click:connect(function()
     Library:ToggleUI()
 end)
-
-
