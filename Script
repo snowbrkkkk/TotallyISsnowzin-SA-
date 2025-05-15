@@ -117,13 +117,22 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-no-cooldown
     print("Clicked")
 end)
 
-Section:NewButton("Fullbright (temporarily stopped)", "litrr", function()
-
+Section:NewButton("Fullbright", "litrr", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Dh9ePW8G"))()
     print("Clicked")
 end)
 
 Section:NewButton("Anti Afk", "aio", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/4m4fLjXR"))()
+    print("Clicked")
+end)
+
+Section:NewButton("Jail Bug (need 2 or more players)", "aio", function()
+
+                local player = game.Players.LocalPlayer
+                local root = player.Character:WaitForChild("HumanoidRootPart")
+                root.CFrame = CFrame.new(-19.900000, -4.770000, 142.500000)
+            
     print("Clicked")
 end)
 
