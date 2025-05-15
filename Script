@@ -117,15 +117,8 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-no-cooldown
     print("Clicked")
 end)
 
-Section:NewButton("Fullbright", "litrr", function()
-local Lighting = game:GetService("Lighting")
+Section:NewButton("Fullbright (temporarily stopped)", "litrr", function()
 
-Lighting.Ambient = Color3.new(1, 1, 1)
-Lighting.Brightness = 5
-Lighting.ClockTime = 12
-Lighting.FogEnd = 1000000
-Lighting.GlobalShadows = false
-Lighting.OutdoorAmbient = Color3.new(1, 1, 1)
     print("Clicked")
 end)
 
