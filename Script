@@ -183,7 +183,7 @@ end)
 
 local Section = Tab:NewSection("Farm Boss Mobile Support")
 
-Section:NewButton("Please! Wait 4 Minutes to use the script", "ButtonInfo", function()
+Section:NewButton("Please! Wait 3 Minutes to use the script", "ButtonInfo", function()
     print("Clicked")
 end)
 
