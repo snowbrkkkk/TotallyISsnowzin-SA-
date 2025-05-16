@@ -1,4 +1,3 @@
-
 local executor = identifyexecutor and identifyexecutor() or "Unknown"
 
 if executor then
